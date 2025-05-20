@@ -1,8 +1,14 @@
 let a : number = 8888
 console.log(a);
 
-const person =  {
-    firstName : 'John',
-    lastName : 'Doe',
-    age : 33,
+interface Person{
+    firstName : string,
+    lastName : string,
+    age : number
+}
+
+const person: Person = {
+    firstName: 'Mike',
+    lastName : 'Tyson',
+    age : 55,
 };
