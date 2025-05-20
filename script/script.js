@@ -6,4 +6,6 @@ const person = {
     lastName: 'Tyson',
     age: 55,
 };
+let { firstName, lastName, country = 'US' } = person;
+console.log(firstName, lastName, country);
 //# sourceMappingURL=script.js.map

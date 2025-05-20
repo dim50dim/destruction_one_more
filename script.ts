@@ -4,7 +4,8 @@ console.log(a);
 interface Person{
     firstName : string,
     lastName : string,
-    age : number
+    age : number,
+    country? : string,
 }
 
 const person: Person = {
@@ -12,3 +13,7 @@ const person: Person = {
     lastName : 'Tyson',
     age : 55,
 };
+
+let {firstName, lastName,country = 'US'} = person;
+
+console.log(firstName, lastName, country);
